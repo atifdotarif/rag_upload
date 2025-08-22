@@ -1,4 +1,3 @@
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b4f48636-b4fd-48d8-b3e5-e7b94f8a5664" />📘 RAG Upload Demo – Documentation
 🔹 Overview
 
 This project demonstrates how to build a Retrieval-Augmented Generation (RAG) pipeline that:
@@ -9,7 +8,7 @@ Stores embeddings in Pinecone (vector database).
 Stores metadata and relationships in Neo4j (graph database).
 Provides a Streamlit web UI for file upload and monitoring.
 The goal is to prepare data for downstream tasks such as semantic search, question-answering, or knowledge graph exploration.
-
+\n
 🔹 Architecture
                  ┌─────────────┐
                  │   Upload    │  ← User uploads PDF/TXT/DOCX
@@ -34,7 +33,7 @@ The goal is to prepare data for downstream tasks such as semantic search, questi
 │ (Vector Store) │                │ (Metadata +    │
 │ semantic search│                │ Relationships) │
 └────────────────┘                └────────────────┘
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/81c37f01-d590-4efc-94fa-7bbf45f7a6a1" />
+<img width="478" height="457" alt="image" src="https://github.com/user-attachments/assets/60ea2c96-ef77-46c2-b2b6-7158a3832fb3" />
 
 
 🔹 Prerequisites
