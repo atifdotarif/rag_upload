@@ -8,31 +8,8 @@ Stores embeddings in Pinecone (vector database).
 Stores metadata and relationships in Neo4j (graph database).
 Provides a Streamlit web UI for file upload and monitoring.
 The goal is to prepare data for downstream tasks such as semantic search, question-answering, or knowledge graph exploration.
-\n
+
 🔹 Architecture
-                 ┌─────────────┐
-                 │   Upload    │  ← User uploads PDF/TXT/DOCX
-                 └──────┬──────┘
-                        │
-                ┌───────▼────────┐
-                │   Text Loader   │ (PDFminer / python-docx / file read)
-                └───────┬────────┘
-                        │
-                ┌───────▼────────┐
-                │   Chunking     │ (smart chunk ~500-1000 tokens)
-                └───────┬────────┘
-                        │
-          ┌─────────────▼─────────────┐
-          │   OpenAI Embeddings API   │ (text-embedding-3-small)
-          └─────────────┬─────────────┘
-                        │
-        ┌───────────────┼───────────────────┐
-        │                                   │
-┌───────▼────────┐                ┌────────▼───────┐
-│ Pinecone Index │                │   Neo4j Graph  │
-│ (Vector Store) │                │ (Metadata +    │
-│ semantic search│                │ Relationships) │
-└────────────────┘                └────────────────┘
 <img width="478" height="457" alt="image" src="https://github.com/user-attachments/assets/60ea2c96-ef77-46c2-b2b6-7158a3832fb3" />
 
 
