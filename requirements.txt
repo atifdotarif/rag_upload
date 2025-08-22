@@ -1,0 +1,7 @@
+python-dotenv==1.0.1
+pypdf==5.0.1
+docx2txt==0.8
+tiktoken==0.7.0
+openai==1.40.0
+pinecone==5.0.1
+neo4j==5.23.1
